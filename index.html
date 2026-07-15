@@ -95,6 +95,7 @@
   <meta name="citation_author" content="Kubo, Hiroyuki">
   <meta name="citation_publication_date" content="2026">
   <meta name="citation_conference_title" content="ACM SIGGRAPH 2026">
+  <meta name="citation_doi" content="10.1145/3799902.3811194">
   <meta
     name="citation_pdf_url"
     content="https://qllg-zsy.github.io/multiple-bounce-BRDF/static/pdfs/paper.pdf"
@@ -128,13 +129,6 @@
   <!-- CSS -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
-  <link
-    rel="preload"
-    href="static/css/bulma-carousel.min.css"
-    as="style"
-    onload="this.onload=null;this.rel='stylesheet'"
-  >
   <link
     rel="preload"
     href="static/css/bulma-slider.min.css"
@@ -155,7 +149,6 @@
   >
 
   <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link
@@ -173,7 +166,6 @@
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
 
@@ -333,34 +325,6 @@
                     </a>
                   </span>
 
-                  <!-- Video -->
-                  <!-- <span class="link-block">
-                    <a
-                      href="static/videos/presentation.mp4"
-                      target="_blank"
-                      class="external-link button is-normal is-rounded is-dark"
-                    >
-                      <span class="icon">
-                        <i class="fas fa-video"></i>
-                      </span>
-                      <span>Video</span>
-                    </a>
-                  </span> -->
-
-                  <!-- Code -->
-                  <!-- <span class="link-block">
-                    <a
-                      href="https://github.com/qllg-zsy/multiple-bounce-BRDF"
-                      target="_blank"
-                      class="external-link button is-normal is-rounded is-dark"
-                    >
-                      <span class="icon">
-                        <i class="fab fa-github"></i>
-                      </span>
-                      <span>Code</span>
-                    </a>
-                  </span> -->
-
                 </div>
               </div>
 
@@ -454,99 +418,26 @@
       </div>
     </section> -->
 
-
     <!-- =======================================================
-         Results carousel
-         Replace these images with your actual results:
+         Result
+         Upload the image as:
          static/images/result1.png
-         static/images/result2.png
-         static/images/result3.png
-         static/images/result4.png
          ======================================================= -->
-    <!-- <section class="hero is-small is-light">
-      <div class="hero-body">
-        <div class="container">
+    <section class="section">
+      <div class="container is-max-desktop">
 
-          <h2 class="title is-3 has-text-centered">Results</h2>
+        <h2 class="title is-3 has-text-centered">Result</h2>
 
-          <div id="results-carousel" class="carousel results-carousel">
-
-            <div class="item">
-              <img
-                src="static/images/result1.png"
-                alt="Rendering comparison result 1"
-                loading="lazy"
-              >
-              <h2 class="subtitle has-text-centered">
-                Comparison of multiple-bounce BRDF models under challenging
-                rough-material configurations.
-              </h2>
-            </div>
-
-            <div class="item">
-              <img
-                src="static/images/result2.png"
-                alt="Rendering comparison result 2"
-                loading="lazy"
-              >
-              <h2 class="subtitle has-text-centered">
-                Our method reduces variance while preserving the appearance of
-                multiple-bounce reflection.
-              </h2>
-            </div>
-
-            <div class="item">
-              <img
-                src="static/images/result3.png"
-                alt="Rendering comparison result 3"
-                loading="lazy"
-              >
-              <h2 class="subtitle has-text-centered">
-                Additional comparison on anisotropic Smith microfacet materials.
-              </h2>
-            </div>
-
-            <div class="item">
-              <img
-                src="static/images/result4.png"
-                alt="Rendering comparison result 4"
-                loading="lazy"
-              >
-              <h2 class="subtitle has-text-centered">
-                Additional rendering results under complex illumination.
-              </h2>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-
-    <!-- =======================================================
-         Video presentation
-         Put your local video at:
-         static/videos/presentation.mp4
-         ======================================================= -->
-    <!-- <section class="hero is-small">
-      <div class="hero-body">
-        <div class="container is-max-desktop">
-
-          <h2 class="title is-3 has-text-centered">Video Presentation</h2>
-
-          <video
-            controls
-            muted
-            preload="metadata"
-            width="100%"
+        <figure class="image">
+          <img
+            src="static/images/result1.png"
+            alt="Rendering comparison result"
+            loading="lazy"
           >
-            <source src="static/videos/presentation.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+        </figure>
 
-        </div>
       </div>
-    </section> -->
+    </section>
 
 
     <!-- =======================================================
@@ -569,16 +460,16 @@
         </div>
 
         <pre id="bibtex-code"><code>@inproceedings{Zhang2026SuccessiveHeightPreintegration,
-          author    = {Siyuan Zhang and Takuya Funatomi and Yuki Fujimura and Yasuhiro Mukaigawa and Hiroyuki Kubo},
-          title     = {Successive Height Preintegration for a Height-Interdependent Path Formulation of Multiple Bounces in Smith Microfacet BRDFs},
-          booktitle = {Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers},
-          year      = {2026},
-          pages     = {1--10},
-          publisher = {Association for Computing Machinery},
-          address   = {New York, NY, USA},
-          doi       = {10.1145/3799902.3811194},
-          url       = {https://doi.org/10.1145/3799902.3811194}
-        }</code></pre>
+  author    = {Zhang, Siyuan and Funatomi, Takuya and Fujimura, Yuki and Mukaigawa, Yasuhiro and Kubo, Hiroyuki},
+  title     = {Successive Height Preintegration for a Height-Interdependent Path Formulation of Multiple Bounces in Smith Microfacet BRDFs},
+  booktitle = {Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers},
+  year      = {2026},
+  pages     = {1--10},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  doi       = {10.1145/3799902.3811194},
+  url       = {https://doi.org/10.1145/3799902.3811194}
+}</code></pre>
       </div>
     </section>
 

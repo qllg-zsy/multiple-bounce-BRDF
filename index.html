@@ -245,7 +245,7 @@
       "Smith microfacet",
       "height preintegration"
     ],
-    "abstract": "We present a height-interdependent path formulation for multiple bounces in Smith microfacet BRDFs and introduce successive height preintegration to remove the height dimension from selected path types. The resulting formulation enables efficient position-free evaluation while accounting for height correlation between bounces. By combining unbiased treatment of major path types with a simplified treatment of the remaining path type, the method reduces variance while suppressing bias.",
+    "abstract": "Smith microfacet models are widely used to describe the interaction of light with surfaces. However, conventional microfacet models account for only a single bounce on microsurfaces, which leads to energy loss. To address the problem of missing energy, several unbiased methods have been proposed to compute multiple bounces on Smith microsurfaces. In addition, a position-free multiple-bounce microfacet model has been introduced by assuming that each bounce of a light path is height-independent, leading to lower variance but biased results. In this paper, we propose a novel derivation of multiple-bounce Smith microfacet bidirectional reflectance distribution functions (BRDFs) based on a partial adoption of the independent-bounce assumption. Our model treats most bounces as height-interdependent, leading to a height-interdependent path formulation. We further propose a successive height preintegration to make this formulation position-free. Although our model still exhibits an extremely small bias, it achieves lower variance than prior unbiased methods. Furthermore, we introduce a path type-aware BRDF evaluation that further reduces variance.",
     "isAccessibleForFree": true,
     "mainEntity": {
       "@type": "WebPage",
@@ -334,7 +334,7 @@
                   </span>
 
                   <!-- Video -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a
                       href="static/videos/presentation.mp4"
                       target="_blank"
@@ -345,10 +345,10 @@
                       </span>
                       <span>Video</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Code -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a
                       href="https://github.com/qllg-zsy/multiple-bounce-BRDF"
                       target="_blank"
@@ -359,7 +359,7 @@
                       </span>
                       <span>Code</span>
                     </a>
-                  </span>
+                  </span> -->
 
                 </div>
               </div>
@@ -411,22 +411,7 @@
 
             <div class="content has-text-justified">
               <p>
-                Multiple-bounce reflection is essential for accurately modeling
-                rough surfaces with Smith microfacet BRDFs, but efficient
-                position-free evaluation remains challenging because successive
-                bounces are correlated through their heights on the microsurface.
-                We introduce a height-interdependent path formulation that
-                explicitly accounts for this correlation and classify light
-                paths according to when they are reflected upward. For the major
-                path types, we derive a new unbiased formulation and apply
-                successive height preintegration to remove the height dimension
-                without introducing bias. For the remaining path type, we
-                partially adopt the independent-bounce assumption to simplify
-                evaluation, yielding a position-free formulation with only a
-                small amount of bias. By combining height-aware path modeling
-                with successive preintegration, our method reduces estimator
-                variance while suppressing bias, providing an efficient model
-                for multiple-bounce Smith microfacet BRDFs.
+                Smith microfacet models are widely used to describe the interaction of light with surfaces. However, conventional microfacet models account for only a single bounce on microsurfaces, which leads to energy loss. To address the problem of missing energy, several unbiased methods have been proposed to compute multiple bounces on Smith microsurfaces. In addition, a position-free multiple-bounce microfacet model has been introduced by assuming that each bounce of a light path is height-independent, leading to lower variance but biased results. In this paper, we propose a novel derivation of multiple-bounce Smith microfacet bidirectional reflectance distribution functions (BRDFs) based on a partial adoption of the independent-bounce assumption. Our model treats most bounces as height-interdependent, leading to a height-interdependent path formulation. We further propose a successive height preintegration to make this formulation position-free. Although our model still exhibits an extremely small bias, it achieves lower variance than prior unbiased methods. Furthermore, we introduce a path type-aware BRDF evaluation that further reduces variance.
               </p>
             </div>
 
@@ -441,7 +426,7 @@
          Put your overview figure at:
          static/images/method_overview.png
          ======================================================= -->
-    <section class="section">
+    <!-- <section class="section">
       <div class="container is-max-desktop">
 
         <h2 class="title is-3 has-text-centered">Method Overview</h2>
@@ -467,7 +452,7 @@
         </figure>
 
       </div>
-    </section>
+    </section> -->
 
 
     <!-- =======================================================
@@ -478,7 +463,7 @@
          static/images/result3.png
          static/images/result4.png
          ======================================================= -->
-    <section class="hero is-small is-light">
+    <!-- <section class="hero is-small is-light">
       <div class="hero-body">
         <div class="container">
 
@@ -535,7 +520,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
     <!-- =======================================================
@@ -543,7 +528,7 @@
          Put your local video at:
          static/videos/presentation.mp4
          ======================================================= -->
-    <section class="hero is-small">
+    <!-- <section class="hero is-small">
       <div class="hero-body">
         <div class="container is-max-desktop">
 
@@ -561,7 +546,7 @@
 
         </div>
       </div>
-    </section>
+    </section> -->
 
 
     <!-- =======================================================
@@ -584,13 +569,16 @@
         </div>
 
         <pre id="bibtex-code"><code>@inproceedings{Zhang2026SuccessiveHeightPreintegration,
-  title     = {Successive Height Preintegration for a Height-Interdependent Path Formulation of Multiple Bounces in Smith Microfacet BRDFs},
-  author    = {Zhang, Siyuan and Funatomi, Takuya and Fujimura, Yuki and Mukaigawa, Yasuhiro and Kubo, Hiroyuki},
-  booktitle = {ACM SIGGRAPH 2026 Conference Proceedings},
-  year      = {2026},
-  url       = {https://qllg-zsy.github.io/multiple-bounce-BRDF/}
-}</code></pre>
-
+          author    = {Siyuan Zhang and Takuya Funatomi and Yuki Fujimura and Yasuhiro Mukaigawa and Hiroyuki Kubo},
+          title     = {Successive Height Preintegration for a Height-Interdependent Path Formulation of Multiple Bounces in Smith Microfacet BRDFs},
+          booktitle = {Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers},
+          year      = {2026},
+          pages     = {1--10},
+          publisher = {Association for Computing Machinery},
+          address   = {New York, NY, USA},
+          doi       = {10.1145/3799902.3811194},
+          url       = {https://doi.org/10.1145/3799902.3811194}
+        }</code></pre>
       </div>
     </section>
 
